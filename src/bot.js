@@ -32,6 +32,8 @@ const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!\n\n`);
   console.log("Logs: ");
+  const Guilds = client.guilds.cache.map((guild) => guild.name);
+  console.log(Guilds);
 });
 
 client.on("message", async (message) => {
