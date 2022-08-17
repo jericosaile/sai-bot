@@ -51,6 +51,7 @@ client.on("interactionCreate", async (interaction) => {
 
   if (interaction.commandName === "account") {
     try {
+      if (!interaction.isRepliable()) return;
       await interaction.reply(
         "You joined discord since " + moment(userTag.createdAt).format("LLLL")
       );
