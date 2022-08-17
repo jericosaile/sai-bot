@@ -36,14 +36,7 @@ const activities = [
 ];
 
 client.on("ready", () => {
-  setInterval(() => {
-    // generate random number between 1 and list length.
-    const randomIndex = Math.floor(Math.random() * (activities.length - 1) + 1);
-    const newActivity = activities[randomIndex];
-    client.user.setActivity(newActivity, {
-      type: "PLAYING"
-    });
-  }, 5000);
+  client.user.setActivity("in my support server", { type: "PLAYING" });
   
   console.log(`Logged in as ${client.user.tag}!\n\n`);
   const Guilds = client.guilds.cache.map((guild) => guild.name);
