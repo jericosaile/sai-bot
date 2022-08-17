@@ -9,7 +9,7 @@ Run these scripts:
 
 ```bash
 git clone
-cd sai
+cd sai-bot
 npm install
 ```
 
