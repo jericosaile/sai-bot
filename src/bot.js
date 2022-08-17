@@ -31,12 +31,13 @@ const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!\n\n`);
-  console.log("Logs: ");
   const Guilds = client.guilds.cache.map((guild) => guild.name);
   console.log(Guilds);
+  console.log("Total of", Guilds.length);
+  console.log("Logs: ");
 });
 
-client.on("message", async (message) => {
+client.on("message", async message => {
   if (message.content === "hi") {
     await message.reply("Hello");
   }
