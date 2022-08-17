@@ -37,12 +37,6 @@ client.on("ready", () => {
   console.log("Logs: ");
 });
 
-client.on("message", async message => {
-  if (message.content === "hi") {
-    await message.reply("Hello");
-  }
-});
-
 client.on("interactionCreate", async (interaction) => {
   var userTag = interaction.user;
   if (!interaction.isChatInputCommand()) return;
