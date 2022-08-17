@@ -33,7 +33,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!\n\n`);
   const Guilds = client.guilds.cache.map((guild) => guild.name);
   console.log(Guilds);
-  console.log("Total of", Guilds.length);
+  console.log("Total of", Guilds.length, "Guild/s");
   console.log("Logs: ");
 });
 
