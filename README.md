@@ -8,7 +8,7 @@
 Run these scripts:
 
 ```bash
-git clone
+git clone https://github.com/jericosaile/sai-bot
 cd sai-bot
 npm install
 ```
