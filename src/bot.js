@@ -15,7 +15,7 @@ const commands = [
   },
 ];
 
-const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
+const rest = new REST({ version: "10" }).setToken(process.env.TESTMODE);
 
 (async () => {
   try {
@@ -71,4 +71,4 @@ client.on("interactionCreate", async (interaction) => {
   }
 });
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.TESTMODE);
